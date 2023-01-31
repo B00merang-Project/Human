@@ -81,7 +81,8 @@ label > selection {
   color: #FFFFFF;
   background-color: #A86B4C; }
   label > selection:focus-within {
-    color: #A86B4C; }
+    color: #FFFFFF;
+    background-color: #A86B4C; }
 
 label:disabled {
   color: #888684; }
@@ -90,7 +91,7 @@ label:disabled {
   > selection label:disabled {
     color: #987868; }
     > selection label:disabled:backdrop {
-      color: #b6aea7; }
+      color: #b29281; }
 
 label.error {
   color: #ED3146; }
@@ -595,7 +596,7 @@ searchbar {
   border-width: 0 0 1px 0;
   border-style: solid;
   border-color: #81766a;
-  background-color: #EFEBE7; }
+  background-color: #e5dfd9; }
 
 .nautilus-window .searchbar-container {
   margin-top: -1px; }
@@ -981,24 +982,23 @@ menubar, .menubar {
   menubar:backdrop, .menubar:backdrop {
     color: #636363;
     background-color: #EFEBE7; }
-
-menubar > menuitem, .menubar > menuitem {
-  padding: 3px 5px;
-  border: 1px solid transparent;
-  color: #202020;
-  background-color: transparent; }
-  menubar > menuitem:hover, .menubar > menuitem:hover {
-    color: #FFFFFF;
-    border-radius: 3px 3px 0 0;
-    border-color: #7f5844;
-    background-color: #A86B4C;
-    background-image: linear-gradient(to bottom, #b87654, #936249); }
-  menubar > menuitem:disabled, .menubar > menuitem:disabled {
-    color: #888684;
+  menubar > menuitem, .menubar > menuitem {
+    padding: 3px 5px;
+    border: 1px solid transparent;
+    color: #202020;
     background-color: transparent; }
-  menubar > menuitem:backdrop, .menubar > menuitem:backdrop {
-    color: #636363;
-    background-color: transparent; }
+    menubar > menuitem:hover, .menubar > menuitem:hover {
+      color: #FFFFFF;
+      border-radius: 3px 3px 0 0;
+      border-color: #7f5844;
+      background-color: #A86B4C;
+      background-image: linear-gradient(to bottom, #b87654, #936249); }
+    menubar > menuitem:disabled, .menubar > menuitem:disabled {
+      color: #888684;
+      background-color: transparent; }
+    menubar > menuitem:backdrop, .menubar > menuitem:backdrop {
+      color: #636363;
+      background-color: transparent; }
 
 notebook {
   padding: 0; }
@@ -1522,8 +1522,7 @@ window.dialog.print drawing {
 window.dialog.print .dialog-action-box {
   margin: 12px; }
 
-frame,
-.frame {
+frame, .frame {
   border: 1px solid #81766a; }
 
 frame {
