@@ -229,13 +229,12 @@ window.aboutdialog image.large-icons {
 
 .osd button, button.osd {
   padding: 4px 8px;
-  border-style: solid;
-  border-width: 1px;
   border-radius: 3px;
+  border: 1px solid #755640;
   color: #FFFFFF;
-  border-color: #755640;
   background-color: #9B6A48;
-  background-image: linear-gradient(to bottom, #b7794e, #976847); }
+  background-image: linear-gradient(to bottom, #b7794e, #976847);
+  box-shadow: none; }
   .osd button:hover, button.osd:hover {
     color: #FFFFFF;
     background-color: #af744b;
@@ -449,13 +448,12 @@ editablelabel > stack > text > selection {
 
 button {
   padding: 4px 8px;
-  border-style: solid;
-  border-width: 1px;
   border-radius: 3px;
+  border: 1px solid #a6998b;
   color: #202020;
-  border-color: #a6998b;
   background-color: #EFEBE7;
-  background-image: linear-gradient(to bottom, white, #ebe6e1); }
+  background-image: linear-gradient(to bottom, white, #ebe6e1);
+  box-shadow: none; }
   button:hover {
     color: #202020;
     background-color: white;
@@ -496,10 +494,8 @@ button {
       background-color: transparent; }
 
 button.destructive-action {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #c42e3e;
   border-radius: 3px;
+  border: 1px solid #c42e3e;
   color: #fdeaed;
   background-color: #ED3146;
   background-image: linear-gradient(to bottom, #ED3146, #d02336); }
@@ -518,10 +514,8 @@ button.destructive-action {
     background-image: none; }
 
 button.suggested-action {
-  border-width: 1px;
-  border-style: solid;
   border-radius: 3px;
-  border-color: #7f5844;
+  border: 1px solid #7f5844;
   color: #FFFFFF;
   background-color: #A86B4C;
   background-image: linear-gradient(to bottom, #b87654, #936249); }
