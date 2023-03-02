@@ -1028,29 +1028,30 @@ menu, .menu {
       menu menuitem accelerator:disabled, .menu menuitem accelerator:disabled {
         color: #888684; }
 
-menubar, .menubar {
-  padding: 0;
+menubar {
+  padding: 0px;
   border-style: none;
-  background-color: #EFEBE7;
-  color: #202020; }
-  menubar:backdrop, .menubar:backdrop {
+  color: #202020;
+  background-color: #EFEBE7; }
+  menubar:backdrop {
     color: #636363;
     background-color: #EFEBE7; }
-  menubar > menuitem, .menubar > menuitem {
+  menubar > item {
     padding: 3px 5px;
+    min-height: 12px;
+    border-radius: 3px 3px 0 0;
     border: 1px solid transparent;
     color: #202020;
     background-color: transparent; }
-    menubar > menuitem:hover, .menubar > menuitem:hover {
-      color: #FFFFFF;
-      border-radius: 3px 3px 0 0;
+    menubar > item:selected {
       border-color: #7f5844;
+      color: #FFFFFF;
       background-color: #A86B4C;
       background-image: linear-gradient(to bottom, #b87654, #936249); }
-    menubar > menuitem:disabled, .menubar > menuitem:disabled {
+    menubar > item:disabled {
       color: #888684;
       background-color: transparent; }
-    menubar > menuitem:backdrop, .menubar > menuitem:backdrop {
+    menubar > item:backdrop {
       color: #636363;
       background-color: transparent; }
 
@@ -1293,7 +1294,11 @@ checkbutton.text-button, radiobutton.text-button {
 check, radio {
   margin: 4px;
   min-height: 16px;
-  min-width: 16px; }
+  min-width: 16px;
+  border: none;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none; }
 
 check, popover.menu check, modelbutton.flat check {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked.png"), url("assets/checkbox-unchecked@2.png")); }
