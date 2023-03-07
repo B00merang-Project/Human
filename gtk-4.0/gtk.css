@@ -1179,71 +1179,69 @@ notebook {
 scrollbar {
   border: 1px solid #bcb0a4;
   border-radius: 4px;
-  background-color: #dbd4cc; }
-  scrollbar trough {
-    border: none;
-    border-radius: 0; }
+  background-color: #dbd4cc;
+  /*
+  &.horizontal button {
+    &.down { -gtk-icon-source: -gtk-icontheme("pan-right-symbolic"); }
+    &.up { -gtk-icon-source: -gtk-icontheme("pan-left-symbolic"); }
+  }
+
+  &.vertical button {
+    &.down { -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
+    &.up { -gtk-icon-source: -gtk-icontheme("pan-up-symbolic"); }
+  }
+  */ }
   scrollbar:backdrop {
     background-color: #dbd4cc; }
-  scrollbar button {
-    padding: 2px;
+  scrollbar > range > trough > slider {
     margin: -1px;
-    min-height: 11px;
-    min-width: 11px; }
-  scrollbar slider {
-    min-width: 45px;
+    min-width: 15px;
     min-height: 15px;
-    margin: -1px;
-    border: 1px solid #a6998b;
     border-radius: 0px;
+    border: 1px solid #a6998b;
     background-clip: padding-box;
-    background-color: #EFEBE7;
-    background-image: linear-gradient(to bottom, white, #ebe6e1); }
-    scrollbar slider:hover {
-      background-image: linear-gradient(to bottom, white, #efebe7); }
-    scrollbar slider:disabled {
+    background-color: #EFEBE7; }
+    scrollbar > range > trough > slider:disabled {
       background-color: transparent;
       background-image: none; }
-  scrollbar.vertical slider {
-    min-width: 15px;
-    min-height: 45px; }
-  scrollbar.vertical slider, scrollbar.vertical button {
+  scrollbar.horizontal > range > trough > slider {
+    background-image: linear-gradient(to bottom, white, #ebe6e1); }
+    scrollbar.horizontal > range > trough > slider:hover {
+      background-image: linear-gradient(to bottom, white, #efebe7); }
+  scrollbar.vertical > range > trough > slider {
     background-image: linear-gradient(to right, white, #ebe6e1); }
-    scrollbar.vertical slider:hover, scrollbar.vertical button:hover {
+    scrollbar.vertical > range > trough > slider:hover {
       background-image: linear-gradient(to right, white, #efebe7); }
+  scrollbar.horizontal > range > trough > slider {
+    min-width: 45px; }
+  scrollbar.vertical > range > trough > slider {
+    min-height: 45px; }
+  scrollbar > range.fine-tune > trough > slider {
+    min-width: 17px;
+    min-height: 17px;
+    border-radius: 0px; }
+  scrollbar > range.fine-tune.horizontal > trough > slider {
+    margin-top: -1px;
+    margin-bottom: -1px; }
+  scrollbar > range.fine-tune.vertical > trough > slider {
+    margin-left: -1px;
+    margin-right: -1px; }
   scrollbar.overlay-indicator:not(.dragging):not(.hovering) {
-    opacity: 1; }
+    opacity: 1.0; }
+    scrollbar.overlay-indicator:not(.dragging):not(.hovering) > range > trough > slider {
+      margin: -1px; }
+    scrollbar.overlay-indicator.horizontal:not(.dragging):not(.hovering) > range > trough > slider {
+      min-width: 45px;
+      min-height: 15px; }
+    scrollbar.overlay-indicator.vertical:not(.dragging):not(.hovering) > range > trough > slider {
+      min-width: 15px;
+      min-height: 45px; }
   scrollbar.overlay-indicator.dragging, scrollbar.overlay-indicator.hovering {
     opacity: 1; }
-  scrollbar.horizontal slider {
-    min-width: 40px; }
-  scrollbar.vertical slider {
-    min-height: 40px; }
-  scrollbar.horizontal slider {
-    min-width: 40px; }
-  scrollbar.horizontal button.down {
-    margin-bottom: 0;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
-  scrollbar.horizontal button.up {
-    margin-top: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    -gtk-icon-source: -gtk-icontheme("pan-start-symbolic"); }
-  scrollbar.vertical slider {
-    min-height: 40px; }
-  scrollbar.vertical button.down {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
-  scrollbar.vertical button.up {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    -gtk-icon-source: -gtk-icontheme("pan-up-symbolic"); }
-  treeview ~ scrollbar.vertical {
-    border-top: 1px solid #a6998b;
-    margin-top: -1px; }
+
+treeview ~ scrollbar.vertical {
+  border-top: 1px solid #a6998b;
+  margin-top: -1px; }
 
 switch {
   font-size: 0;
