@@ -1244,12 +1244,11 @@ treeview ~ scrollbar.vertical {
   margin-top: -1px; }
 
 switch {
-  font-size: 0;
-  color: transparent;
-  outline-offset: -4px;
   margin: 4px;
-  border: 1px solid #a6998b;
+  font-size: 0;
   border-radius: 4px;
+  border: 1px solid #a6998b;
+  color: transparent;
   background-color: #EFEBE7;
   box-shadow: inset 0 1px rgba(0, 0, 0, 0.1); }
   switch:checked {
@@ -1266,22 +1265,23 @@ switch {
   switch:backdrop {
     border-color: #a6998b;
     background-color: #EFEBE7; }
-  switch slider {
+  switch > slider {
+    margin: -1px;
     min-width: 30px;
     min-height: 20px;
-    margin: -1px;
     border: 1px solid #a6998b;
     border-radius: 3px;
     color: #202020;
     background-color: #EFEBE7;
-    background-image: linear-gradient(to bottom, white, #ebe6e1); }
-  switch:disabled slider {
+    background-image: linear-gradient(to bottom, white, #ebe6e1);
+    box-shadow: none; }
+  switch:disabled > slider {
     border-color: #b4a89c;
     background-color: #dbd6d1; }
-  switch:disabled:backdrop slider {
+  switch:disabled:backdrop > slider {
     border-color: #a6998b;
     background-color: #ebe7e3; }
-  switch:backdrop slider {
+  switch:backdrop > slider {
     border-color: #a6998b;
     background-color: #EFEBE7; }
 
