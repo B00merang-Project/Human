@@ -1515,23 +1515,24 @@ progressbar {
   font-size: smaller;
   color: #909090; }
   progressbar > trough {
-    border: 1px solid #bcb0a4;
     border-radius: 3px;
+    border: 1px solid #bcb0a4;
     background-color: #dbd4cc; }
   progressbar > trough > progress {
-    border: 1px solid #b87654;
     border-radius: 3px;
+    border: 1px solid #b87654;
     background-color: #d58d53;
-    box-shadow: inset 1px 1px rgba(255, 255, 255, 0.15);
-    background-image: repeating-linear-gradient(65deg, #c48559, #c48559 10px, #b67d54 10px, #b67d54 20px);
-    background-size: 22px; }
+    box-shadow: inset 1px 1px rgba(255, 255, 255, 0.15); }
   progressbar.vertical > trough > progress {
     background-image: repeating-linear-gradient(-25deg, #c48559, #c48559 10px, #b67d54 10px, #b67d54 20px);
     background-size: 20px; }
+  progressbar.horizontal > trough > progress {
+    background-image: repeating-linear-gradient(65deg, #c48559, #c48559 10px, #b67d54 10px, #b67d54 20px);
+    background-size: 22px; }
   progressbar.horizontal > trough {
-    min-width: 150px; }
+    min-width: 0px; }
   progressbar.vertical > trough {
-    min-height: 80px; }
+    min-height: 0px; }
   progressbar.horizontal > trough, progressbar.horizontal > trough > progress {
     min-height: 18px; }
   progressbar.vertical > trough, progressbar.vertical > trough > progress {
